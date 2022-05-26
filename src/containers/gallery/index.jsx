@@ -13,8 +13,7 @@ const GalleryContainer = styled.div`
   /* background-attachment: fixed; */
   /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
 
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
 `;
 
 const GalleryTitle = styled.h1`
