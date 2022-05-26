@@ -1,14 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
-import { Button } from "../button";
 import { Logo } from "../logo";
 import { Marginer } from "../marginer";
 import {
-  faTwitter,
-  faLinkedin,
+  faFacebookSquare,
+  faYoutube,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { theme } from "../../theme";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -16,7 +17,7 @@ const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #332d2d;
+  background-color: #4e3c33;
   position: relative;
 
   @media screen and (max-width: 480px) {
@@ -53,18 +54,18 @@ const PrivacyContainer = styled.div`
   display: flex;
 `;
 
-const SocialContainer = styled.div`
+const SocialIconsContainer = styled.div`
   display: flex;
 `;
 
 const SocialIcon = styled.div`
-  color: #fff;
-  font-size: 20px;
+  color: ${theme.primary};
+  font-size: 40px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 
   &:not(:last-of-type) {
-    margin-right: 18px;
+    margin-right: 25px;
 
     @media screen and (max-width: 480px) {
       margin-right: 10px;
@@ -81,7 +82,31 @@ const SocialIcon = styled.div`
   }
 `;
 
-const Link = styled.a`
+const SocialIconLink = styled.a`
+  color: ${theme.primary};
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+
+  &:not(:last-of-type) {
+    margin-right: 25px;
+
+    @media screen and (max-width: 480px) {
+      margin-right: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
+
+  &:hover {
+    color: #d2cef1;
+  }
+`;
+
+const PrivacyContainerLink = styled.a`
   color: #fff;
   transition: all 200ms ease-in-out;
   cursor: pointer;
@@ -120,31 +145,39 @@ const RightsReservedText = styled.div`
 
 export function Footer(props) {
   return (
-    <FooterContainer>
+    <FooterContainer className="footer">
       <Marginer direction="vertical" margin="5em" />
       <Logo small />
-      <Marginer direction="vertical" margin="3em" />
+      <Marginer direction="vertical" margin="1.5em" />
       <FooterText>Footer Text for</FooterText>
       <FooterText>Babu School of Rhythms</FooterText>
-      <Marginer direction="vertical" margin="5em" />
-      <Button>Contact Us</Button>
-      <Marginer direction="vertical" margin="7em" />
+      <Marginer direction="vertical" margin="6em" />
+      <FooterText>Connect Us</FooterText>
+      <Marginer direction="vertical" margin="1em" />
+      <SocialIconsContainer>
+        <SocialIconLink href="https://instagram.com/babuschoolofrhythms?igshid=14glcicbygxk7">
+          <FontAwesomeIcon icon={faInstagram} />
+        </SocialIconLink>
+        <SocialIconLink href="https://www.youtube.com/channel/UCWddMPl4M2TayT4qPmd8Onw">
+          <FontAwesomeIcon icon={faYoutube} />
+        </SocialIconLink>
+        <SocialIconLink href="https://www.facebook.com/babuschoolofrhythm/">
+          <FontAwesomeIcon icon={faFacebookSquare} />
+        </SocialIconLink>
+        <SocialIconLink
+          href="mailto:babuschoolofrhythms123@gmail.com?subject=Inquiry about your Music class&body=Would love to connect...When shall I reach you??"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faEnvelope} />
+        </SocialIconLink>
+      </SocialIconsContainer>
+      <Marginer direction="vertical" margin="6em" />
       <CompanyDetailsContainer>
         <PrivacyContainer>
-          <Link>Privacy Policy</Link>
-          <Link>Terms and Conditions</Link>
+          <PrivacyContainerLink>Privacy Policy</PrivacyContainerLink>
+          <PrivacyContainerLink>Terms and Conditions</PrivacyContainerLink>
         </PrivacyContainer>
-        <SocialContainer>
-          <SocialIcon>
-            <FontAwesomeIcon icon={faTwitter} />
-          </SocialIcon>
-          <SocialIcon>
-            <FontAwesomeIcon icon={faLinkedin} />
-          </SocialIcon>
-          <SocialIcon>
-            <FontAwesomeIcon icon={faInstagram} />
-          </SocialIcon>
-        </SocialContainer>
       </CompanyDetailsContainer>
       <RightsReservedText>
         &copy; 2022 - Babu School of Rhythms. All rights reserved.

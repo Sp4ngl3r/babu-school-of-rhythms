@@ -1,22 +1,18 @@
 import React from "react";
-import { scroller } from "react-scroll/modules";
 import { Element } from "react-scroll/modules";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 
-import BackgroundImage from "../../assets/pictures/Arun_Kumar_Sir.jpg";
+import BackgroundImage from "../../assets/pictures/babu70-all-snares.jpg";
 import { Button } from "../../components/button";
-import { DownArrow } from "../../components/downArrow";
 import { Logo } from "../../components/logo";
 import { Marginer } from "../../components/marginer";
-import { NavigationBar } from "../../components/navigationBar";
 
 const TopContainer = styled.div`
   width: 100%;
   height: 100vh;
   padding: 0;
   background: url(${BackgroundImage}) no-repeat center center fixed;
-  /* background-image: url(${BackgroundImage}); */
   position: relative;
 
   -webkit-background-size: cover;
@@ -28,7 +24,7 @@ const TopContainer = styled.div`
 const BackgroundFilter = styled.div`
   width: 100%;
   height: 100%;
-  background-color: rgba(55, 55, 55, 0.8);
+  background-color: rgba(55, 55, 55, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,29 +49,21 @@ const DownArrowComponentContainer = styled.div`
 export function TopSection(props) {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
 
-  const scrollingToNextSection = () => {
-    scroller.scrollTo("about", { smooth: true, duration: 1500 });
-  };
-
   return (
-    <Element name="topSection">
+    <Element className="top-section">
       <TopContainer>
         <BackgroundFilter>
-          <NavigationBar />
           {isMobile ? (
             <Marginer direction="vertical" margin="5em" />
           ) : (
-            <Marginer direction="vertical" margin="11em" />
+            <Marginer direction="vertical" margin="13em" />
           )}
           <Logo />
           <Marginer direction="vertical" margin="2em" />
           <CaptionText>Short Description about the school</CaptionText>
           <CaptionText>in one or two lines</CaptionText>
-          <Marginer direction="vertical" margin="5em" />
+          <Marginer direction="vertical" margin="7em" />
           <Button>Join us</Button>
-          <DownArrowComponentContainer onClick={scrollingToNextSection}>
-            <DownArrow />
-          </DownArrowComponentContainer>
         </BackgroundFilter>
       </TopContainer>
     </Element>

@@ -1,8 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-// import BeemaLogo from "../../assets/logo/logo_cropped.png";
-import BabuSirImage from "../../assets/logo/babu_sir.jpg";
+import BabuSirImage from "../../assets/logo/BsorLogo.png";
 import { theme } from "../../theme";
 
 const LogoContainer = styled.div`
@@ -12,13 +11,13 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImage = styled.img`
-  width: 8em;
-  height: 8em;
+  width: 450px;
+  height: 150px;
 
   ${({ inline }) =>
     inline &&
     css`
-      width: 50px;
+      width: 150px;
       height: 50px;
       margin-right: 7px;
     `};
@@ -26,8 +25,8 @@ const LogoImage = styled.img`
   ${({ small }) =>
     small &&
     css`
-      width: 6em;
-      height: 6em;
+      width: 15em;
+      height: 5em;
     `};
 `;
 
@@ -36,7 +35,7 @@ const LogoText = styled.div`
   font-size: ${({ inline, small }) =>
     inline ? "18px" : small ? "38px" : "55px"};
   color: ${({ inline }) => (inline ? "#fff" : theme.primary)};
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
 `;
 

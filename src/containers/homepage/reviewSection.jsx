@@ -13,12 +13,15 @@ import UserImage1 from "../../assets/pictures/profile_picture_1.jpg";
 import UserImage2 from "../../assets/pictures/profile_picture_2.jpg";
 import UserImage3 from "../../assets/pictures/profile_picture_3.jpg";
 import UserImage4 from "../../assets/pictures/profile_picture_4.jpg";
+import { theme } from "../../theme";
 
 const ReviewsContainer = styled(Element)`
   height: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background: rgba(165, 129, 206, 0.9); */
+  background-color: rgba(55, 55, 55, 0.9);
 `;
 
 const StyledCarouselProvider = styled(CarouselProvider)`
@@ -53,7 +56,7 @@ const StyledDotGroup = styled(DotGroup)`
   }
 
   .carousel__dot--selected {
-    background-color: #c4c4c4;
+    background-color: ${theme.primary};
   }
 `;
 
@@ -61,11 +64,11 @@ export function ReviewsSections(props) {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
 
   return (
-    <ReviewsContainer>
+    <ReviewsContainer className="reviews">
       <SectionTitle>Reviews about the class</SectionTitle>
       <Marginer direction="vertical" margin="3em" />
       <StyledCarouselProvider
-        naturalSlideHeight={isMobile ? 170 : 300}
+        naturalSlideHeight={isMobile ? 170 : 270}
         naturalSlideWidth={isMobile ? 105 : 200}
         totalSlides={8}
         visibleSlides={isMobile ? 1 : 3}

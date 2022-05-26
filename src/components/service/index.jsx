@@ -14,12 +14,12 @@ const ServiceContainer = styled.div`
 `;
 
 const ServiceImage = styled.img`
-  height: 20em;
-  width: 20em;
+  height: 399px;
+  width: 600px;
 
   @media screen and (max-width: 480px) {
-    width: 13em;
     height: 13em;
+    width: 20em;
   }
 `;
 
@@ -27,7 +27,7 @@ const ServiceDescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 60%;
+  max-width: 50%;
   margin: 0 50px;
 
   @media screen and (max-width: 480px) {
@@ -36,21 +36,24 @@ const ServiceDescriptionContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  color: #000;
+  color: #fff;
   font-size: 28px;
   font-weight: 700;
   margin: 8px 0;
 
   @media screen and (max-width: 480px) {
     margin-top: 2em;
+    text-align: center;
   }
 `;
 
 const Details = styled.p`
-  color: #7a7a7a;
+  color: #fff;
   font-size: 19px;
-  text-align: center;
-  max-width: 65%;
+  /* text-align: center; */
+  max-width: 60%;
+  text-align: justify;
+  text-justify: inter-word;
 
   @media screen and (max-width: 480px) {
     max-width: 100%;
