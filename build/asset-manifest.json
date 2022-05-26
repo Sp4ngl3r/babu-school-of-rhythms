@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cfb20a53.css",
+    "main.js": "/static/js/main.766e7c4c.js",
+    "static/js/787.d6a92206.chunk.js": "/static/js/787.d6a92206.chunk.js",
+    "static/media/babu70-all-snares.jpg": "/static/media/babu70-all-snares.68bb8b141541d8ce7f01.jpg",
+    "static/media/DrumFest.jpg": "/static/media/DrumFest.b43f97b21161707ef701.jpg",
+    "static/media/about.jpg": "/static/media/about.aa0149425dc3889ca84d.jpg",
+    "static/media/achievements.jpg": "/static/media/achievements.29b461825803630b3d89.jpg",
+    "static/media/journey_of_babu.jpg": "/static/media/journey_of_babu.911f1e5cbed2d2c3f7db.jpg",
+    "static/media/music_background.jpeg": "/static/media/music_background.83d8ab13a98887c9faaf.jpeg",
+    "static/media/BsorLogo.png": "/static/media/BsorLogo.727d1af75d91b4af2458.png",
+    "static/media/profile_picture_3.jpg": "/static/media/profile_picture_3.2d4fe24f81d4fb73b4f9.jpg",
+    "static/media/profile_picture_1.jpg": "/static/media/profile_picture_1.e6394fa7747a8b32f4d8.jpg",
+    "static/media/profile_picture_2.jpg": "/static/media/profile_picture_2.f47211a1c2773102cd9a.jpg",
+    "index.html": "/index.html",
+    "main.cfb20a53.css.map": "/static/css/main.cfb20a53.css.map",
+    "main.766e7c4c.js.map": "/static/js/main.766e7c4c.js.map",
+    "787.d6a92206.chunk.js.map": "/static/js/787.d6a92206.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfb20a53.css",
+    "static/js/main.766e7c4c.js"
+  ]
+}
