@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cfb20a53.css",
-    "main.js": "/static/js/main.766e7c4c.js",
+    "main.js": "/static/js/main.647be5da.js",
     "static/js/787.d6a92206.chunk.js": "/static/js/787.d6a92206.chunk.js",
     "static/media/babu70-all-snares.jpg": "/static/media/babu70-all-snares.68bb8b141541d8ce7f01.jpg",
     "static/media/DrumFest.jpg": "/static/media/DrumFest.b43f97b21161707ef701.jpg",
@@ -15,11 +15,11 @@
     "static/media/profile_picture_2.jpg": "/static/media/profile_picture_2.f47211a1c2773102cd9a.jpg",
     "index.html": "/index.html",
     "main.cfb20a53.css.map": "/static/css/main.cfb20a53.css.map",
-    "main.766e7c4c.js.map": "/static/js/main.766e7c4c.js.map",
+    "main.647be5da.js.map": "/static/js/main.647be5da.js.map",
     "787.d6a92206.chunk.js.map": "/static/js/787.d6a92206.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cfb20a53.css",
-    "static/js/main.766e7c4c.js"
+    "static/js/main.647be5da.js"
   ]
 }
